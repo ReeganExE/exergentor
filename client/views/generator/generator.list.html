@@ -1,0 +1,23 @@
+<div class="panel panel-primary">
+
+    <div class="panel-heading">
+        <div class="panel-title">{{ vm.name }}</div>
+    </div>
+
+    <div class="panel-body">
+        <table class="table quizs">
+            <tr ng-repeat="quiz in vm.quizs">
+                <td><a title="{{ quiz.template }}" ui-sref="generator_detail({ quiz: quiz, id: quiz.id})">{{ quiz.subject}}</a></td>
+                <td>{{ quiz.id }}</td>
+                <td>{{ quiz.created }}</td>
+                <td>
+                  <a title="Try" target="_blank" ui-sref="embed({ id: quiz.id })" >
+                    <i class="glyphicon glyphicon-share share"></i>
+                  </a>
+                </td>
+                <td><a href="#" ng-click="vm.remove(quiz)"><i class="glyphicon glyphicon-remove remove"></i></a></td>
+            </tr>
+        </table>
+    </div>
+
+</div>

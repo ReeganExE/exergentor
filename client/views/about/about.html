@@ -1,0 +1,125 @@
+<style type="text/css">
+    
+
+    .co-gi-sai {
+        overflow: hidden;
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        color: #fff;
+        height: 580px;
+        /*background-image: linear-gradient(to bottom,#2276D2,#1C5FA8)*/
+    }
+
+    .co-gi-sai .icon {
+        position: relative;
+        width: 200px;
+        background-image: url(CZKybRTWYAAld0i.jpg);
+    }
+
+    .co-gi-sai .deptrai {
+        position: absolute;
+        top: 36%;
+        left: 50%;
+        border-radius: 50%;
+        border: 10px solid #fff;
+        width: 150px;
+        height: 150px;
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        -webkit-animation: deptrai 2s infinite;
+        animation: deptrai 2s infinite;
+        opacity: 0
+    }
+
+    .co-gi-sai .deptrai:nth-child(2) {
+        -webkit-animation-delay: .2s;
+        animation-delay: .2s
+    }
+
+    .co-gi-sai .deptrai:nth-child(3) {
+        -webkit-animation-delay: .5s;
+        animation-delay: .5s
+    }
+
+    @-webkit-keyframes deptrai {
+        0% {
+            width: 150px;
+            height: 150px;
+            border: 40px solid #fff;
+            opacity: 0
+        }
+
+        50% {
+            opacity: .1
+        }
+
+        90% {
+            width: 750px;
+            height: 750px
+        }
+
+        90%,100% {
+            border: 2px solid #fff;
+            opacity: 0
+        }
+
+        100% {
+            width: 1500px;
+            height: 1500px
+        }
+    }
+
+    @keyframes deptrai {
+        0% {
+            width: 150px;
+            height: 150px;
+            border: 40px solid #fff;
+            opacity: 0
+        }
+
+        50% {
+            opacity: .1
+        }
+
+        90% {
+            width: 750px;
+            height: 750px
+        }
+
+        90%,100% {
+            border: 2px solid #fff;
+            opacity: 0
+        }
+
+        100% {
+            width: 1500px;
+            height: 1500px
+        }
+    }
+
+
+    .co-gi-sai img {
+        margin-top: 27px;
+    }
+
+    .co-gi-sai h3 {
+        color: #3C96F7;
+        font-weight: bold;
+    }
+</style>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <div class="panel-title">About</div>
+  </div>
+  <div class="panel-body">
+    <p class="text-primary">Ninh</p>
+    <p class="text-primary">dongian.rapclubkhtn@gmail.com</p>
+    <center class="co-gi-sai">
+        <img src="assets/CZKybRTWYAAld0i.jpg" />
+        <div class="deptrai"></div>
+        <div class="deptrai"></div>
+        <div class="deptrai"></div>
+        <h3>Ninh - #ReeganExE</h3>
+    </center>
+  </div>
+</div>

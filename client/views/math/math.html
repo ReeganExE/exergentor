@@ -1,0 +1,38 @@
+<div class="panel panel-primary">
+
+  <div class="panel-heading">
+      <div class="panel-title">{{ vm.name }}</div>
+  </div>
+
+  <div class="panel-body">
+      <form>
+        <fieldset class="form-group">
+          <label for="code">Math code:</label>
+          <textarea ng-model="vm.code" class="form-control" id="code" placeholder="Matlab code here"></textarea>
+        </fieldset>
+        
+
+        <div class="row form-group">
+          <div class="col-lg-12">
+            <button ng-disabled="!vm.code || vm.result && !vm.result.$resolved"
+             ng-click="vm.execute()"
+             type="button" class="btn btn-primary btn-lg btn-block"
+             title="Execute above code">Execute</button>
+          </div>
+        </div>
+        <div class="row form-group">
+          <div class="col-lg-12">
+            <div ng-if="vm.result.error" class="alert alert-dismissible alert-danger">
+              <strong>Oh snap!</strong>
+              <div>{{ vm.result.error }}</div>
+            </div>
+            <div ng-hide="vm.result.error" class="alert alert-dismissible alert-success">
+              <strong>Result:</strong>
+              <div>{{ vm.result.value }}</div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+</div>

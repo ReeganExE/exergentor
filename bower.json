@@ -1,0 +1,26 @@
+{
+  "name": "exegentor",
+  "version": "0.1.0",
+  "dependencies": {
+    "jquery": "2.2.4",
+    "bootstrap": "^3.3.6",
+    "angular": "~1.5.0",
+    "angular-route": "~1.5.0",
+    "angular-resource": "~1.5.0",
+    "angular-animate": "~1.5.0",
+    "bootstrap-sass": "^3.3.6",
+    "ng-cookies": "^1.1.1",
+    "angular-ui-router": "^0.3.1",
+    "bootstrap.min": "https://bootswatch.com/cyborg/bootstrap.min.css",
+    "prism": "^1.5.1",
+    "prism-atom-dark": "https://raw.githubusercontent.com/PrismJS/prism-themes/master/themes/prism-atom-dark.css",
+    "lodash": "^4.14.0",
+    "doT": "^1.0.1",
+    "chance": "^1.0.3",
+    "angular-loading-bar": "^0.9.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.5.0",
+    "angular-scenario": "~1.5.0"
+  }
+}

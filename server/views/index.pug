@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+
+    link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism-okaidia.css", data-noprefix)
+  body
+    section
+      div
+         pre
+          code(class="language-markup", code-target).
+            #{quizOutput}
+
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js')
+    script(src='https://studio.edx.org/c4x/edX/DemoX/asset/jschannel.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/prism.min.js')
+    script(type='text/javascript').
+      $(function() {
+        if (window.parent !== window) {
+            channel = Channel.build({
+                window: window.parent,
+                origin: "*",
+                scope: "JSInput"
+            });
+
+            channel.bind("getGrade", function() {
+              return true;
+            });
+        }
+      });
+      function checkTrue() {
+        return true;
+      }
